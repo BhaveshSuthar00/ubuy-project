@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   <style>
+       
+
+
+
+  /* #container {
+            display: flex; 
+            
+      display: grid;
+       grid-template-columns: 50% 50%;
+       grid-template-rows: 50% 50%;
+       border: 2px solid black;
+   
+      
+   
+      
+  }   */
+  
+  
+  #container{
+           width: 100%;
+           height:1240px;
+           /* border: 1px solid red; */
+          
+        }
+
+        .box1{
+            height: 10%;
+            width: 100%;
+            /* border: 2px solid rgb(24, 211, 65); */
+            width: 100%;
+            display: flex;
+        }
+
+         #mainbox{
+            width: 100%;
+            height: 80%;
+            display: flex;
+            /* border: 1px solid rgb(28, 14, 226); */
+        } 
+
+          
+
+    
+  
+         .box2{
+           width: 50%;
+           height: 100%;
+           /* border: 1px solid red; */
+           margin-left: 30px;
+          
+        }
+
+        .box3{
+            width: 50%;
+            height: 100%;
+            /* border: 4px solid rgb(13, 196, 171); */
+           
+         }
+         .box5{
+
+         }
+
+
+         .box4{
+            height: 7%;
+            width: 100%;
+            /* border: 2px solid rgb(24, 211, 65); */
+            width: 100%;
+            text-align: center;
+        }
+
+         .order{
+            width: 84%;
+            height: 30%;
+            border: 1px solid orange;
+            border-radius: 7px ;
+           
+         }
+
+         /* .box5{
+            width: 12%;
+            height: 100%;
+            border: 4px solid rgb(184, 8, 140);
+            border-radius: 7px ;
+         } */
+
+
+         .deliverydays{
+             width: 50%;
+             height: 10%;
+             background-color: orange;
+             margin-left: 10px;
+             text-align: center;
+             color: white;
+             font-weight: bold;
+         }
+
+
+         .pay{
+
+          
+                width: 84%;
+                height: 45%;
+                /* border: 1px solid rgb(0, 0, 0); */
+                border-radius: 7px ;
+                margin-top: 15px;
+               
+           
+
+         }
+
+         .paybox{
+             height: 10%;
+             width: 100%;
+             border: 0.3px solid black;
+             border-radius: 5px;
+         }
+   .proceedpay{
+    height: 16%;
+    width: 100%;
+    border: 0.3px solid black;
+   }
+
+   .des{
+       width: 100%;
+       height: 30%;
+       border: 0.3px solid black;
+       border-radius: 5px;
+       
+   }
+        
+        
+       
+
+      .image{
+           margin-left: 30px;
+           height: 70px;
+           width: 100px;
+
+      }
+
+      .box4>p{
+          text-align: center;
+          margin-bottom: -30px;
+         color: orange;
+      }
+    
+     
+
+      
+
+
+form > input {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 93%;
+    padding: 10px 10px;
+  }
+  
+  
+  button{
+      background-color: orange;
+     border-radius: 10px;
+     padding: 10px 50px;
+     border: none;
+     color: white;
+     font-weight: bold;
+    
+  } 
+  .paybutton{
+    background-color: orange;
+    border-radius: 10px;
+    padding: 10px 30px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    margin-left:30%;
+    margin-top: 2.4%;
+   
+  }
+
+  .shippingmethods{
+
+    width: 95%;
+    height: 50px;
+    background-color: rgb(238, 226, 238);
+    border-radius: 7px;
+
+  }
+
+
+  .paymentoptions{
+
+    width:  100%;
+    height: 100px;
+    background-color: rgb(238, 226, 238);
+    border-radius: 7px;
+   
+  
+
+
+  }
+
+
+  .payment1{
+      
+    width:  100%;
+    height: 50px;
+    background-color: rgb(238, 226, 238);
+    /* border: 1px solid red; */
+    display: flex;
+   
+   
+  }
+
+  .payment2{
+      
+    width:  100%;
+    height: 50px;
+    background-color: rgb(238, 226, 238);
+    /* border: 1px solid red; */
+    display: flex;
+   
+   
+  }
+
+  .visa{
+      
+    width: 40%;
+    height: 100%;
+    background-color: rgb(238, 226, 238);
+    /* border: 1px solid rgb(136, 22, 22); */
+    display: flex;
+   
+   
+   
+  }
+
+
+  .master{
+      
+    width: 40%;
+    height: 100%;
+    background-color: rgb(238, 226, 238);
+    /* border: 1px solid rgb(136, 22, 22); */
+    display: flex;
+   
+   
+   
+  }
+  li{
+      list-style: none;
+  }
+
+.visa1{
+    width: 10%;
+    height: 100%;
+}
+
+
+.cartimage{
+    margin-left: 80%;
+    margin-top: 4%;
+}
+
+
+
+
+ 
+  
+ 
+  
+  /* #container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  @media only screen and (min-width: 0px) and (max-width: 575px) {
+    #container {
+      flex-direction: column;
+    }
+  } */
+  
+   </style>
+  </head>
+  <body>
+      
+
+   
+   
+    <div id="container">
+              
+        
+        
+        <div class="box1"> <div class="image"> <img src="https://www.ubuy.co.in/skin/frontend/default/ubuy/images/logo_in.jpg" alt="" srcset="">
+        </div>
+
+        <div class="cartimage"><img src="https://www.ubuy.co.in/skin/frontend/default/ubuycom/images/cart-fill.svg?v=1" alt="" srcset=""></div>
+           
+    
+    </div>
+        
+        
+    
+       
+         <div id="mainbox">
+
+           
+           
+           
+          
+            <div class="box2">
+                
+                
+                <h2>Shippling Information</h2>
+           
+                  <p>Please mention complete details as it appears on your Aadhar card/Voter ID and other ID proofs in order to avoid customs clearance delays</p>
+                 
+                 
+                  
+                    
+                    <textarea
+                    name=""
+                    id="desc"
+                    cols="80"
+                    rows="14"
+                    placeholder="Adress description"
+                  ></textarea>
+          
+                   
+                    <br />
+                    <br />
+                   
+                   
+                  </form>
+                  
+                  <h2>Shipping Method</h2>
+
+
+
+                   <div class="shippingmethods">
+
+                    <div id=""><ul class="">
+                        <li class="radio-bubble ">
+                        <input name="shippingmethod" type="radio" value="" id="" 
+                   >
+                        <label for="">
+                            <span class=""></span>
+                            <span class="">
+                                Express Shipping - 3-6 Business days (Customs delay might occur)                    <span class="price">
+                                    INR3,080.00                    </span>
+                            </span>
+                        </label>
+                    </li>
+                            <li class="radio-bubble ">
+                        <input name="shippingmethod" type="radio" value="" id="">
+                        <label for="">
+                            Standard Shipping - 5-9 Business days (Customs delay might occur) 
+                                    INR2,233.00                    </span>
+                        
+                        </label>
+                    </li>
+                    </ul>
+                   </div>
+                   <h2>Payment Options</h2>
+                           <div class="paymentoptions">
+                              
+                                 <div class="payment1">
+                                     <div class="visa1"><img src="https://ubuykw.s3.amazonaws.com/ubuycom/payment-icon/onepage/icon-163826652751.png" alt="" srcset=""></div>
+                                 <div class="visa"><li class="radio-bubble ">
+                                    <input name="shippingmethod" type="radio" value="" id="">
+                                    <label for="">
+                                         
+                                        PayPal Express Checkout             </span>
+                                    
+                                    </label>
+                                </li></div>
+                                <div class="visa1"><img src="https://ubuykw.s3.amazonaws.com/ubuycom/payment-icon/onepage/icon-163826663070.png" alt="" srcset=""></div>
+                                <div class="visa"><li class="radio-bubble ">
+                                   <input name="shippingmethod" type="radio" value="" id="">
+                                   <label for="">
+                                        
+                                    Visa/Mastercard/Amex (International cards)           </span>
+                                   
+                                   </label>
+                               </li></div>
+                                </div>
+                                 <div class="payment2">
+                                    <div class="visa1"><img src="https://ubuykw.s3.amazonaws.com/ubuycom/payment-icon/onepage/icon-162693429880.png" alt="" srcset=""></div>
+                                    <div class="master"><li class="radio-bubble ">
+                                       <input name="shippingmethod" type="radio" value="" id="">
+                                       <label for="">
+                                            
+                                        Visa/MasterCard/RuPay (Local cards)       </span>
+                                       
+                                       </label>
+                                   </li></div>
+                                   <div class="visa1"><img src="https://ubuykw.s3.amazonaws.com/ubuycom/payment-icon/onepage/icon-161950798978.png" alt="" srcset=""></div>
+                                   <div class="master"><li class="radio-bubble ">
+                                      <input name="shippingmethod" type="radio" value="" id="">
+                                      <label for="">
+                                           
+                                        Wallets/Net Banking/UPI            </span>
+                                      
+                                      </label>
+                                  </li></div>
+                                 </div>
+                            
+
+                           </div>
+        </div>
+
+              </div>
+              
+                
+          <div class="box3">
+<h2>Order Review</h2>
+
+   <div class="order"><div class="deliverydays">Fast Delivery Products</div></div>
+   <!-- <div class="order"><div class="deliverydays">10+ Delivery Days </div></div> -->
+
+
+
+   
+   <div class="pay">
+       <div class="paybox"></div>
+       <div class="paybox"></div>
+       <div class="paybox"></div>
+       <div class="paybox"></div>
+       <div class="paybox"></div>
+       <div class="proceedpay"><button class="paybutton">PROCEED TO PAY</button></div>
+       <div class="des"><p>Disclaimer - Since your order will arrive from the USA, a formal customs clearance procedure will be there. In rare cases (Depending upon product’s nature), you may need to provide documents to customs authority if they request, to clear the shipment from customs. In case, 
+           if you need any help during the clearance process, you may reach to our 24/7 customer service.</p></div>
+       
+   </div>
+   <div class="box5">
+    
+</div>    
+</div>
+
+          
+        </div>
+
+
+        
+            
+        
+        <div class="box4"><p>© 2021 Ubuy</p><br><p>Privacy
+            |
+            Terms & Conditions
+            |
+            GDPR Terms & conditions</p></div>
+    
+    </div>
+
+  
+        
+    </div>
+
+ </body>
+</html>
+
+<script src=""></script>
+
