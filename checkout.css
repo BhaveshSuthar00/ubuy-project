@@ -5,7 +5,7 @@
 }
 
 .box1 {
-  height: 10%;
+  height: 7%;
   width: 100%;
   /* border: 2px solid rgb(24, 211, 65); */
   width: 100%;
@@ -58,9 +58,9 @@
 }
 
 .pay {
-  width: 84%;
-  height: 45%;
-  /* border: 1px solid rgb(0, 0, 0); */
+  width:84%;
+  height: 47%;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 7px;
   margin-top: 15px;
 }
@@ -68,26 +68,44 @@
 .paybox {
   height: 10%;
   width: 100%;
-  border: 0.3px solid black;
+  display: flex;
   border-radius: 5px;
+  border-bottom: 0.3px solid grey;
 }
+
+.paybox1,.paybox2,.paybox3,.paybox4,.paybox5,.paybox6,.paybox7,.paybox8,.paybox9,.paybox10{
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+
 .proceedpay {
   height: 16%;
   width: 100%;
-  border: 0.3px solid black;
+  /* border: 0.3px solid black; */
 }
 
 .des {
   width: 100%;
   height: 30%;
-  border: 0.3px solid black;
+ border-top: 0.3px solid grey ;
   border-radius: 5px;
 }
 
-.image {
+.buyimage {
   margin-left: 30px;
-  height: 70px;
-  width: 100px;
+  height: 100%;
+  width: 50%;
+  border: 1 px solid red;
+  margin-top: 8px;
+}
+.cartimage {
+  margin-left: 30px;
+  height: 100%;
+  width: 50%;
+  border: 1 px solid red;
+  margin-top: 1.5%;
+  margin-left: 80%;
 }
 
 .box4 > p {
@@ -183,13 +201,20 @@ form > select {
 li {
   list-style: none;
 }
+.ptag {
+  padding: 10px;
+}
 
 .visa1 {
   width: 10%;
   height: 100%;
 }
-
-.cartimage {
-  margin-left: 80%;
-  margin-top: 4%;
+.ptag {
+  padding: 10px;
 }
+
+.paytag{
+  margin-left: 13px;
+  margin-top: 13px;
+}
+
