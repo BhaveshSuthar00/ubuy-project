@@ -1,9 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-family: poppins, sans-serif;
-}
-
 .navbar {
   overflow: hidden;
   background-color: white;
@@ -23,7 +17,6 @@
   align-items: center;
   text-decoration: none;
   line-height: 19.5px;
-  /* font-family: poppins,sans-serif;*/
 }
 
 .dropdown {
@@ -44,10 +37,6 @@
   margin-left: 5px;
 }
 
-/* .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-} */
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -63,7 +52,6 @@
   display: block;
   text-align: left;
   height: 30px;
-  margin: 0px;
   margin-left: -90px;
   position: static;
   font-family: poppins, sans-serif;
@@ -95,9 +83,6 @@
 }
 .rightdiv > div {
   margin-top: 20px;
-  /* width: 20%; */
-  /* height: 100%; */
-  /* border: 1px solid green; */
   margin-left: 20px;
 }
 #mobileapp {
@@ -121,13 +106,27 @@ a {
 #country {
   margin-top: 26px;
 }
+.countryimg {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
 #language {
   margin-top: 30px;
   font-size: 18px;
 }
+#language > img {
+  height: 16px;
+  width: 16px;
+}
+button > img {
+  height: 16px;
+  width: 16px;
+  margin-top: 2px;
+}
 #accountoptions {
   margin: 0px;
-  /* border: 1px solid blue; */
 }
 #cart {
   margin-top: 13px;
@@ -144,22 +143,28 @@ i {
 }
 
 .santa {
-  width: 40%;
-  height: 100px;
+  width: 43%;
+  height: 210px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 25px;
+}
+.santa img {
+  height: 100%;
+  width: 100%;
 }
 .search {
-  width: 65%;
+  width: 60%;
   border: 1px solid black;
-  height: 120px;
+  height: 140px;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 25px;
   border-radius: 15px;
   padding-left: 2%;
+  box-sizing: border-box;
+  margin-bottom: 10%;
 }
 input {
-  width: 95%;
+  width: 83%;
   height: 45%;
   border-radius: 10px;
   font-size: 20px;
@@ -168,24 +173,35 @@ input {
 #searchbutton {
   display: inline-block;
   border: 1px solid transparent;
+  margin-left: 4%;
 }
 .flex {
   display: inline-block;
   /* padding: 0px 6px; */
+  margin: 0px;
 }
 .flag {
   margin-left: 20px;
-  margin-top: 13px;
+  margin-top: 3px;
+  height: 30px;
+  width: 10%;
 }
-h5 {
+
+.flex > h5 {
   font-size: 20px;
+  margin: 0px;
+  color: black;
 }
-* {
-  box-sizing: border-box;
+.dropdown-content > h6 {
+  margin: 0px;
+  margin-left: -60px;
 }
+
 .accountimg {
   line-height: 15px;
-  margin-top: 0px;
-  padding-right: 8px;
+  margin-top: 2px;
+  margin-right: 5px;
   margin-bottom: -7px;
+  height: 22px;
+  width: 22px;
 }
