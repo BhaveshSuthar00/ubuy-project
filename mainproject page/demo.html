@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            height: 300px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+</body>
+</html>
+<script>
+   var kan = document.querySelector('.container');
+   var arr = JSON.parse(localStorage.getItem('indexvalue')) || [];
+   var k = arr.length-1;
+   var kon = [arr[k]];
+   console.log(arr)
+//    displaytable(arr);
+   valueofthe(kon);
+   function valueofthe(kon) {
+       document.querySelector('.container').textContent = "";
+        kon.map(function (elem){
+            var div = document.createElement('div');
+           div.textContent = elem.brand;
+           document.querySelector('.container').append(div);
+        })
+    } 
+</script>
