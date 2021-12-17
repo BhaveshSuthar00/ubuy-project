@@ -49,8 +49,9 @@
     display: grid;
     grid-gap: 20px;
     margin-top: 3%;
+    /* height: 100%; */
     grid-template-columns: repeat(3, 1fr);
-    overflow-y: scroll;
+    /* overflow-y: scroll; if you think this is required than use this scroller */
 }
 .outterlayer  {
     display: block;
@@ -99,7 +100,6 @@
     height: 43px;
     font-size: 18px;
     margin-top: 2%;
-    overflow: hidden;
     background-color: white;
 }
 .pricedivtag {

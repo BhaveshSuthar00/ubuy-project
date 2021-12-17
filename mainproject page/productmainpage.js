@@ -100,3 +100,6 @@ function priceofp(event){
     var kokain = document.querySelector('price-rangecat').value;
     console.log(kokain)
 }
+
+var k = document.querySelector("#price-rangecat").value;
+console.log(k);

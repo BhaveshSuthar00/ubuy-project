@@ -34,25 +34,25 @@
                 </div>
                 <div>
                     <label for="price1">
-                        <input value="1" type="checkbox" name="priceunder7700" id="price1">
+                        <input value="1" type="radio" name="priceunder7700" id="price1">
                         <span>INR7700 to under</span>
                     </label><br>
                 </div>
                 <div>
                     <label for="price2">
-                        <input value="2" type="checkbox" name="priceunder7700" id="price2">
+                        <input value="2" type="radio" name="priceunder7700" id="price2">
                         <span>INR19250 to INR38500</span>
                     </label><br>
                 </div>
                 <div>
                     <label for="price3">
-                        <input value="3" type="checkbox" name="priceunder7700" id="price3">
+                        <input value="3" type="radio" name="priceunder7700" id="price3">
                         <span>INR38500 to INR77000</span>
                     </label><br>
                 </div>
                 <div>
                     <label for="price4">
-                        <input value="4" type="checkbox" name="priceunder7700" id="price4">
+                        <input value="4" type="radio" name="priceunder7700" id="price4">
                         <span>INR77000 and above</span>
                     </label>
                 </div>
@@ -65,72 +65,74 @@
                 <div id="brandlistbelow">
                     <div>
                         <label for="brand10">
-                            <input value="10" type="checkbox" name="priceunder7700" id="brand10">
+                            <input value="apple" type="radio" name="priceunder7700" id="brand10">
                             <span>Apple</span>
                         </label><br>
                     </div>
                     <div>
                         <label for="brand20">
-                            <input value="20" type="checkbox" name="priceunder7700" id="brand20">
+                            <input value="amazon" type="radio" name="priceunder7700" id="brand20">
                             <span>Amazon</span>
                         </label><br>
                     </div>
                     <div>
                         <label for="brand30">
-                            <input value="30" type="checkbox" name="priceunder7700" id="brand30">
+                            <input value="oculus" type="radio" name="priceunder7700" id="brand30">
                             <span>Oculus</span>
                         </label><br>
                     </div>
                     <div>
                         <label for="brand40">
-                            <input value="40" type="checkbox" name="priceunder7700" id="brand40">
+                            <input value="amazon basics" type="radio" name="priceunder7700" id="brand40">
                             <span>Amazon Basics</span>
                         </label>
                     </div>
                     <div>
                         <label for="brand50">
-                            <input value="40" type="checkbox" name="priceunder7700" id="brand50">
+                            <input value="ailun" type="radio" name="priceunder7700" id="brand50">
                             <span>Ailun</span>
                         </label>
                     </div>
                     <div>
                         <label for="brand60">
-                            <input value="40" type="checkbox" name="priceunder7700" id="brand60">
+                            <input value="licb" type="radio" name="priceunder7700" id="brand60">
                             <span>LiCB</span>
                         </label>
                     </div>
                     <div>
                         <label for="brand70">
-                            <input value="40" type="checkbox" name="priceunder7700" id="brand70">
+                            <input value="engeizer" type="radio" name="priceunder7700" id="brand70">
                             <span>Enegizer</span>
                         </label>
                     </div>
                 </div>
+                <!-- for the listofitmeinsub of left side div -->
                 <div id="listofiteminsub">
                     <div>
                         <p><span>CATEGORIES</span></p>
                     </div>
                     <ul>
-                        <li>Accessories & Supplies</li>
-                        <li>Camera & Photo</li>
-                        <li>Car & Vehicle Electronics</li>
-                        <li>Cell Phones & Accessories</li>
-                        <li>Computer & Accessories</li>
-                        <li>Electronics Warranties</li>
-                        <li>GPS, Finders & Accessories</li>
-                        <li><i>+Show More</i>
-                            <li>Headphones</li>
-                            <li>Office Electronics</li>
-                            <li>Portable Audio & Video</li>
-                            <li>Security & Surveillance</li>
-                            <li>Service Plans</li>
-                            <li>Television & Video</li>
-                            <li>Video Game Consoles & Accessories</li>
-                            <li>Video Projectors</li>
-                            <li>Wearable Technology</li>
-                            <li>eBook Readers & Accessories</li>
-                            <li>Household Batteries, Chargers & Accessories</li>
-                            <li>Power Accessories</li>
+                        <li><a href="#">Accessories & Supplies</a></li>
+                        <li><a href="#">Camera & Photo</a></li>
+                        <li><a href="#">Car & Vehicle Electronics</a></li>
+                        <li><a href="#">Cell Phones & Accessories</a></li>
+                        <li><a href="#">Computer & Accessories</a></li>
+                        <li><a href="#">Electronics Warranties</a></li>
+                        <li><a href="#">GPS, Finders & Accessories</a></li>
+                        <li><ul><a href="#">+Show More</a></ul>
+                        <!-- this part need some advanced level of css so, don't change for now we will do it at the end. thank you -->
+                        <!-- <li><a href="#">Headphones</a></li>
+                            <li><a href="#">Office Electronics</a></li>
+                            <li><a href="#">Portable Audio & Video</a></li>
+                            <li><a href="#">Security & Surveillance</a></li>
+                            <li><a href="#">Service Plans</a></li>
+                            <li><a href="#">Television & Video</a></li>
+                            <li><a href="#">Video Game Consoles & Accessories</a></li>
+                            <li><a href="#">Video Projectors</a></li>
+                            <li><a href="#">Wearable Technology</a></li>
+                            <li><a href="#">eBook Readers & Accessories</a></li>
+                            <li><a href="#">Household Batteries, Chargers & Accessories</a></li>
+                            <li><a href="#">Power Accessories</a></li> -->
                         </li>
                         
                     </ul>
@@ -138,10 +140,15 @@
             </div>
         </div>
         
+        <!-- right side part -->
         <div id="fromdatabase">
-            <div id="inlineelement"></div>
-            <div id="inputfromdata">
+            <!-- right side main container -->
+            <div id="inlineelement">
+                <!-- <div>prachi yaha pa aapna static data add on karna</div> -->
             </div>
+            <div id="inputfromdata">
+            <!-- data from local storage will be shown in here -->
+        </div>
         </div>
     </div>
 </body>

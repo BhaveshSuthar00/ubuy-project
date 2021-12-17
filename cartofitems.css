@@ -75,13 +75,14 @@
   margin-top: 2%;
   width: 100%;
   border: 1px solid rgb(219, 215, 215);
-  font-size: 26px;
+  font-size: 18px;
 }
 .dateandmonth {
   border-bottom: 1px solid rgb(219, 215, 215);
-  padding-top: 15px;
+  padding-top: 10px;
+  font-size: 18px;
   padding-left: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .itemlistOndisplay {
   display: flex;
@@ -175,6 +176,14 @@
 .footerlinks > .listoflinks > li > a {
   text-decoration: none;
   color: gray;
+}
+.mainbody {
+  position: relative;
+}
+.detail+a {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5%;
 }
 /* subfooter part */
 #subfooter-row1 {
