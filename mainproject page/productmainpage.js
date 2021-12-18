@@ -1,8 +1,184 @@
-var data = document.querySelector("#inputfromdata").value;
-var database = JSON.parse(localStorage.getItem("mainprojectdata")) || [];
+// var data = document.querySelector("#inputfromdata").value;
+// var database = JSON.parse(localStorage.getItem("mainprojectdata")) || [];
 // var indexfors = JSON.parse(localStorage.getItem('indexvalue'))||[];
 var indexfors = [];
-
+var database = [
+    {
+      brand : 'us store',
+      price: 2656,
+      cutprice: 4019,
+      name: "Fire TV Stick with Alexa Voice Remote (includes",
+      image: "https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_US218_.jpg"      
+    },
+    {
+        brand : 'us store',
+        price: 2202,
+        cutprice: 4019,
+        name: "Echo Dot (3rd Gen, 2018 release) - Smart speaker",
+        image: "https://m.media-amazon.com/images/I/6182S7MYC2L._AC_US218_.jpg"      
+    },
+    {
+        brand : "us store",
+        price: 1409,
+        cutprice: 1599,
+        name: "Amazon Basics 36 Pack AAA High-Performance",
+        image: "https://m.media-amazon.com/images/I/71nDX36Y9UL._AC_US218_.jpg"      
+      },
+      {
+        brand : "us store",
+        price: 3565,
+        cutprice: 5302,
+        name: "Introducing Fire TV Stick 4K Max streaming",
+        image: "https://m.media-amazon.com/images/I/41XTOfFgUqL._AC_US218_.jpg"      
+      },
+      {
+        brand : "us store",
+        price: 2019,
+        cutprice: 2112,
+        name: "Apple 20W USB-C Power Adapter",
+        image: "https://m.media-amazon.com/images/I/41iWogJnZQL._AC_US218_.jpg"      
+      },
+      {
+        brand : "us store",
+        price: 8558,
+        cutprice: 9467,
+        name: "Turtle Beach Stealth 600 Gen 2 Wireless Gaming",
+        image: "https://m.media-amazon.com/images/I/61iHiW114KL._AC_US218_.jpg"      
+      },
+      {
+        brand : "us store",
+        price: 9467,
+        cutprice: 10466,
+        name: "JBL FLIP 4 - Waterproof Portable Bluetooth",
+        image: "https://m.media-amazon.com/images/I/61d5F64UDpL._AC_US218_.jpg"      
+      },
+      {
+        brand : "us store",
+        price: 16739,
+        cutprice: 13105,
+        name: "Ring Video Doorbell 3–enhanced wifi,v",
+        image: "https://m.media-amazon.com/images/I/71v6fiYWE5L._AC_US218_.jpg"      
+      },
+      {
+        brand : "amazon",
+        price: 14740,
+        cutprice: 16739,
+        name: "Xbox Elite Series 2 Controller – Black",
+        image: "https://m.media-amazon.com/images/I/71F6eID-ImL._AC_US218_.jpg"      
+      },
+      {
+        brand : "amazon",
+        price: 5525,
+        cutprice: 6745,
+        name: "Logitech C920S HD Pro Webcam, Full HD",
+        image: "https://m.media-amazon.com/images/I/61-6uAf8soL._AC_US218_.jpg"      
+      },
+      {
+        brand : "amazon",
+        price: 13696,
+        cutprice: 16736,
+        name: "Sceptre 27-Inch FHD LED Gaming Monitor",
+        image: "https://m.media-amazon.com/images/I/61FYOyYCg1S._AC_US218_.jpg"      
+      },
+      {
+        brand : "oculus",
+        price: 16649,
+        cutprice: 23010,
+        name: "New Apple AirPods Pro",
+        image: "https://m.media-amazon.com/images/I/71bhWgQK-cL._AC_US218_.jpg"      
+      },
+      {
+        brand : "oculus",
+        price: 27553,
+        cutprice: 30000,
+        name: "Oculus Quest 2 — Advanced All-In-One",
+        image: "https://m.media-amazon.com/images/I/615YaAiA-ML._AC_US218_.jpg"      
+      },
+      {
+        brand : "oculus",
+        price: 18467,
+        cutprice: 25735,
+        name: "Bose QuietComfort Noise Cancelling",
+        image: "https://m.media-amazon.com/images/I/61j9RdOsJwL._AC_US218_.jpg"      
+      },
+      {
+        brand : "nintendo",
+        price: 14740,
+        cutprice: 16739,
+        name: "Xbox Elite Series 2 Controller – Black",
+        image: "https://m.media-amazon.com/images/I/71F6eID-ImL._AC_US218_.jpg"      
+      },
+      {
+        brand : "us store",
+        price: 39939,
+        cutprice: 40000,
+        name: "Oculus Quest 2 — Advanced All-In-One Virtual Reality Headset — 256 GB",
+        image: "https://m.media-amazon.com/images/I/61kwRNPtMpL._AC_US218_.jpg"      
+      },
+      {
+        brand : "us store",
+        price: 54811,
+        cutprice: 56000,
+        name: "DJI Mini 2 Fly More Combo – Ultralight Foldable Drone, 3-Axis Gimbal with 4K ...",
+        image: "https://m.media-amazon.com/images/I/71wfsfmD-UL._AC_US218_.jpg"      
+      },
+      {
+        brand : "us store",
+        price: 33094,
+        cutprice: 45015,
+        name: "TCL 50-inch Class 4-Series 4K UHD Smart Roku LED TV - 50S435, 2021 Model",
+        image: "https://m.media-amazon.com/images/I/71wJCiFPrfL._AC_US218_.jpg"      
+      },
+      {
+        brand : "us store",
+        price: 43907,
+        cutprice: 50260,
+        name: "Apple AirPods Max - Space Gray",
+        image: "https://m.media-amazon.com/images/I/81jqUPkIVRL._AC_US218_.jpg"      
+      },
+      {
+        brand : "us store",
+        price: 45634,
+        cutprice: 54901,
+        name: "VIZIO 65-Inch V-Series 4K UHD LED HDR Smart TV with Apple AirPlay",
+        image: "https://m.media-amazon.com/images/I/81ii3VScCbL._AC_US218_.jpg"      
+      },
+      {
+        brand : "us store",
+        price: 72619,
+        cutprice: 76707,
+        name: "Acer Nitro 5 AN515-55-53E5 Gaming Laptop | Intel Core i5-10300H | NVIDIA GeForce ...",
+        image: "https://m.media-amazon.com/images/I/71m03KItMZL._AC_US218_.jpg"      
+      },
+      {
+        brand : "us store",
+        price: 92607,
+        cutprice: 100000,
+        name: "CYBERPOWERPC Gamer Xtreme VR Gaming PC, Intel Core i5-11400F 2.6GHz, 8GB DDR4",
+        image: "https://m.media-amazon.com/images/I/81Wx7hw9vwL._AC_US218_.jpg"      
+      },
+      {
+        brand : "us store",
+        price: 61988,
+        cutprice: 65000,
+        name: "SAMSUNG 65-Inch Class Crystal UHD AU8000 Series - 4K UHD HDR Smart TV",
+        image: "https://m.media-amazon.com/images/I/81Wx7hw9vwL._AC_US218_.jpg"      
+      },
+      {
+        brand : "us store",
+        price: 118821,
+        cutprice: 127509,
+        name: "SAMSUNG 49-inch Odyssey G9 Gaming Monitor | QHD, 240hz, 1000R Curved, QLED",
+        image: "https://m.media-amazon.com/images/I/61SQz8S+fEL._AC_US218_.jpg"      
+      },
+      {
+        brand : "us store",
+        price: 91155,
+        cutprice: 94155,
+        name: "Meeting Owl Pro - 360-Degree, 1080p HD Smart Video Conference Camera",
+        image: "https://m.media-amazon.com/images/I/91-o+984YvL._AC_US218_.jpg"      
+      },
+]
 // value(indexfors);
 displayTable(database)
 function displayTable (database){
@@ -50,7 +226,6 @@ function displayTable (database){
         pricewithlogo.append(pricediv5, ubuylogo);
         var containerdiv = document.createElement('div');
         containerdiv.setAttribute('class','outterlayer');
-        // var bestseller = document.createElement('span');
         var atag = document.createElement("a");
         atag.style.textDecoration = "none";
         atag.addEventListener("click", function () {
@@ -81,11 +256,7 @@ function displayTable (database){
                 price : elem.price,
                 cutprice : elem.cutprice,
                 image : elem.image,
-                discription : elem.discription,
-                important : elem.important,
-                detail : elem.detail
             }
-
             indexfors.push(valueforproduct);
             localStorage.setItem('indexvalue',JSON.stringify(indexfors));
             window.location.href = "demo.html"
