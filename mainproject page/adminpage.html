@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maindd {
+            display: flex;
+            height: 1800px;
+        }
+        #display {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            border: 10px solid black;
+            height: 1400px;
+            background-color: blanchedalmond;
+            width: 80%;
+            overflow-y: scroll;
+            margin-left: 2%;
+        }
+        #display>div {
+            margin: 2%;
+        }
+        .image {
+            width: 200px;
+            height: 200px;
+        }
+        input {
+            width: 100%;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="maindd">
+        <div>
+            
+            <form class="container">
+                <p>brand name</p>
+                <input id="brand" type="text">
+                <p>product name </p>
+                <input id="name" type="text">
+                <p>price</p>
+                <input id="price" type="number">
+                <p>cutprice</p>
+                <input id="cut" type="number">
+                <p>description</p>
+                <textarea name="" id="discription" cols="30" rows="6"></textarea>
+                <p>important information</p>
+                <textarea name="" id="important" cols="30" rows="8"></textarea>
+                <p>details</p>
+                <textarea name="" id="detailofproduct" cols="30" rows="6"></textarea>
+                <p>image of product</p>
+                <input id="image" type="text">
+                <br>
+                <br>
+                <input type="submit">
+            </form>
+        </div>
+        <div id="display">
+
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector(".container").addEventListener("submit", addItem);
+    var database = JSON.parse(localStorage.getItem('mainprojectdata')) || [];
+    displayTable(database);
+
+    function addItem(event) {
+        // event.preventDefault()
+        var brandname = document.querySelector('#brand').value;
+        var name = document.querySelector('#name').value;
+        var important = document.querySelector('#important').value;
+        var price = document.querySelector("#price").value;
+        var discription = document.querySelector('#discription').value;
+        var img = document.querySelector("#image").value;
+        var detail = document.querySelector("#detailofproduct").value;
+        var cutprice  = document.querySelector("#cut").value;
+        var object = {
+            brand : brandname,
+            name : name,
+            price : price,
+            cutprice : cutprice,
+            image : img,
+            discription : discription,
+            important : important,
+            detail : detail
+        }
+        database.push(object);
+        localStorage.setItem('mainprojectdata', JSON.stringify(database));
+        displayTable(database);
+
+    }
+
+
+    function displayTable(database){
+        document.querySelector('#display').textContent = "";
+        database.map(function (elem, index){
+            var div = document.createElement('div');
+            div.setAttribute('class', 'itemsDisplay');
+            var brand = document.createElement('span');
+            brand.textContent = elem.brand;
+            var divi = document.createElement('div');
+            var img = document.createElement('img');
+            img.setAttribute('class','image');
+            img.setAttribute('src', elem.image);
+            divi.append(img);
+            var name = document.createElement('p');
+            name.textContent = elem.name;
+            var price = document.createElement('p');
+            price.textContent = elem.price;
+            var discription = document.createElement('p');
+            discription.textContent = elem.discription;
+            var detail = document.createElement('p');
+            detail.textContent = elem.detail;
+            var important = document.createElement('p');
+            important.textContent = elem.important;
+            var del = document.createElement('button');
+            del.addEventListener('click', function(){
+                deleteitem(index);
+            });
+            del.textContent = "remove product";
+            div.append(brand, name, price, divi,discription,detail,important, del);
+            document.querySelector('#display').append(div);
+        })
+    } 
+
+    function deleteitem(index){
+        database.splice(index, 1);
+        localStorage.setItem('mainprojectdata', JSON.stringify(database));
+        displayTable(database);
+    }
+</script>
