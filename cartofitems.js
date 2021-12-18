@@ -86,8 +86,11 @@ function deleteItem(index) {
   localStorage.setItem("pro", JSON.stringify(datastorage));
   displayTable(datastorage);
 }
+// <<<<<<< HEAD
 
 // here ankit
 function proceedToCheckout() {
   window.location.href = "checkout.html";
 }
+// =======
+// >>>>>>> 47805950bfd6082744215b2cfc439a363c0fae3b

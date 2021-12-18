@@ -75,13 +75,14 @@
   margin-top: 2%;
   width: 98%;
   border: 1px solid rgb(219, 215, 215);
-  font-size: 26px;
+  font-size: 18px;
 }
 .dateandmonth {
   border-bottom: 1px solid rgb(219, 215, 215);
-  padding-top: 15px;
+  padding-top: 10px;
+  font-size: 18px;
   padding-left: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .itemlistOndisplay {
   display: flex;
@@ -97,7 +98,7 @@
 }
 .countofproduct {
   height: 25px;
-  width: 1%;
+  width: 80px;
   margin-left: 2%;
   display: block;
   margin-top: 2%;
@@ -175,6 +176,14 @@
 .footerlinks > .listoflinks > li > a {
   text-decoration: none;
   color: gray;
+}
+.mainbody {
+  position: relative;
+}
+.detail + a {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5%;
 }
 /* subfooter part */
 #subfooter-row1 {
@@ -267,6 +276,7 @@
 #subfooter-row3-lastcol > div:nth-child(1) {
   line-height: 22px;
 }
+/* <<<<<<< HEAD */
 /* Ankit Css part */
 
 .paytag,
@@ -343,3 +353,4 @@ input {
 .paytag {
   font-weight: bold;
 }
+
