@@ -86,4 +86,3 @@ function deleteItem(index) {
   localStorage.setItem("pro", JSON.stringify(datastorage));
   displayTable(datastorage);
 }
-
