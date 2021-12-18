@@ -10,8 +10,6 @@ function displayTable(datastorage) {
     var span = document.createElement("span");
     span.textContent = " Wednesday, December 22";
     outter.append(date, span);
-    // document.querySelector("#datemonth").append();
-
     var main = document.createElement("div");
     main.setAttribute("id", "prolist");
 
@@ -46,9 +44,9 @@ function displayTable(datastorage) {
     p.innerHTML = ' <i class="fas fa-heart"></i>';
     var lab = document.createElement("span");
     lab.setAttribute("class", "heart");
-    lab.textContent = "wishlist";
-    atag.append(p, lab);
+    lab.textContent = "Add to Wishlist";
     div2.append(p1, h3, atag);
+    atag.append(p, lab);
 
     var div3 = document.createElement("div");
     div3.setAttribute("class", "div3ofproduct");
@@ -88,6 +86,7 @@ function deleteItem(index) {
   localStorage.setItem("pro", JSON.stringify(datastorage));
   displayTable(datastorage);
 }
+
 // here ankit
 function proceedToCheckout() {
   window.location.href = "checkout.html";
