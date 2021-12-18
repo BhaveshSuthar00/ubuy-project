@@ -4,20 +4,23 @@
 var indexfors = [];
 var database = [
     {
+      brandname : 'amazon',
       brand : 'us store',
       price: 2656,
       cutprice: 4019,
-      name: "Fire TV Stick with Alexa Voice Remote (includes",
+      name: "Fire TV Stick with Alexa Voice Remote",
       image: "https://m.media-amazon.com/images/I/51KKR5uGn6L._AC_US218_.jpg"      
     },
     {
-        brand : 'us store',
-        price: 2202,
-        cutprice: 4019,
-        name: "Echo Dot (3rd Gen, 2018 release) - Smart speaker",
-        image: "https://m.media-amazon.com/images/I/6182S7MYC2L._AC_US218_.jpg"      
+      brandname : 'amazon',
+      brand : 'us store',
+      price: 2202,
+      cutprice: 4019,
+      name: "Echo Dot (3rd Gen, 2018 release) - Smart speaker",
+      image: "https://m.media-amazon.com/images/I/6182S7MYC2L._AC_US218_.jpg"      
     },
     {
+      brandname : 'amazon basics',
         brand : "us store",
         price: 1409,
         cutprice: 1599,
@@ -25,6 +28,7 @@ var database = [
         image: "https://m.media-amazon.com/images/I/71nDX36Y9UL._AC_US218_.jpg"      
       },
       {
+        brandname : 'oculus',
         brand : "us store",
         price: 3565,
         cutprice: 5302,
@@ -32,6 +36,7 @@ var database = [
         image: "https://m.media-amazon.com/images/I/41XTOfFgUqL._AC_US218_.jpg"      
       },
       {
+        brandname : 'apple',
         brand : "us store",
         price: 2019,
         cutprice: 2112,
@@ -39,6 +44,7 @@ var database = [
         image: "https://m.media-amazon.com/images/I/41iWogJnZQL._AC_US218_.jpg"      
       },
       {
+        brandname : 'licb',
         brand : "us store",
         price: 8558,
         cutprice: 9467,
@@ -46,6 +52,7 @@ var database = [
         image: "https://m.media-amazon.com/images/I/61iHiW114KL._AC_US218_.jpg"      
       },
       {
+        brandname : 'amazon',
         brand : "us store",
         price: 9467,
         cutprice: 10466,
@@ -53,6 +60,7 @@ var database = [
         image: "https://m.media-amazon.com/images/I/61d5F64UDpL._AC_US218_.jpg"      
       },
       {
+        brandname : 'enegizer',
         brand : "us store",
         price: 16739,
         cutprice: 13105,
@@ -60,55 +68,63 @@ var database = [
         image: "https://m.media-amazon.com/images/I/71v6fiYWE5L._AC_US218_.jpg"      
       },
       {
-        brand : "amazon",
+        brandname : 'ailun',
+        brand : "us store",
         price: 14740,
         cutprice: 16739,
         name: "Xbox Elite Series 2 Controller – Black",
         image: "https://m.media-amazon.com/images/I/71F6eID-ImL._AC_US218_.jpg"      
       },
       {
-        brand : "amazon",
+        brandname : 'enegizer',
+        brand : "us store",
         price: 5525,
         cutprice: 6745,
         name: "Logitech C920S HD Pro Webcam, Full HD",
         image: "https://m.media-amazon.com/images/I/61-6uAf8soL._AC_US218_.jpg"      
       },
       {
-        brand : "amazon",
+        brandname : 'ailun',
+        brand : "us store",
         price: 13696,
         cutprice: 16736,
         name: "Sceptre 27-Inch FHD LED Gaming Monitor",
         image: "https://m.media-amazon.com/images/I/61FYOyYCg1S._AC_US218_.jpg"      
       },
       {
-        brand : "oculus",
+        brandname : 'oculus',
+        brand : "us store",
         price: 16649,
         cutprice: 23010,
         name: "New Apple AirPods Pro",
         image: "https://m.media-amazon.com/images/I/71bhWgQK-cL._AC_US218_.jpg"      
       },
       {
-        brand : "oculus",
+        brandname : 'ailun',
+        brand : "us store",
         price: 27553,
         cutprice: 30000,
         name: "Oculus Quest 2 — Advanced All-In-One",
         image: "https://m.media-amazon.com/images/I/615YaAiA-ML._AC_US218_.jpg"      
       },
       {
-        brand : "oculus",
+        brandname : 'oculus',
+        brand : "us store",
         price: 18467,
         cutprice: 25735,
         name: "Bose QuietComfort Noise Cancelling",
         image: "https://m.media-amazon.com/images/I/61j9RdOsJwL._AC_US218_.jpg"      
       },
       {
-        brand : "nintendo",
+        brandname : 'nintendo',
+        brand : "us store",
         price: 14740,
         cutprice: 16739,
         name: "Xbox Elite Series 2 Controller – Black",
         image: "https://m.media-amazon.com/images/I/71F6eID-ImL._AC_US218_.jpg"      
       },
       {
+        brandname : 'enegizer',
         brand : "us store",
         price: 39939,
         cutprice: 40000,
@@ -116,6 +132,7 @@ var database = [
         image: "https://m.media-amazon.com/images/I/61kwRNPtMpL._AC_US218_.jpg"      
       },
       {
+        brandname : 'amazon',
         brand : "us store",
         price: 54811,
         cutprice: 56000,
@@ -123,6 +140,7 @@ var database = [
         image: "https://m.media-amazon.com/images/I/71wfsfmD-UL._AC_US218_.jpg"      
       },
       {
+        brandname : 'amazon basics',
         brand : "us store",
         price: 33094,
         cutprice: 45015,
@@ -130,6 +148,7 @@ var database = [
         image: "https://m.media-amazon.com/images/I/71wJCiFPrfL._AC_US218_.jpg"      
       },
       {
+        brandname : 'apple',
         brand : "us store",
         price: 43907,
         cutprice: 50260,
@@ -137,6 +156,7 @@ var database = [
         image: "https://m.media-amazon.com/images/I/81jqUPkIVRL._AC_US218_.jpg"      
       },
       {
+        brandname : 'amazon basics',
         brand : "us store",
         price: 45634,
         cutprice: 54901,
@@ -144,6 +164,7 @@ var database = [
         image: "https://m.media-amazon.com/images/I/81ii3VScCbL._AC_US218_.jpg"      
       },
       {
+        brandname : 'amazon',
         brand : "us store",
         price: 72619,
         cutprice: 76707,
@@ -151,6 +172,7 @@ var database = [
         image: "https://m.media-amazon.com/images/I/71m03KItMZL._AC_US218_.jpg"      
       },
       {
+        brandname : 'ailun',
         brand : "us store",
         price: 92607,
         cutprice: 100000,
@@ -158,6 +180,7 @@ var database = [
         image: "https://m.media-amazon.com/images/I/81Wx7hw9vwL._AC_US218_.jpg"      
       },
       {
+        brandname : 'amazon basics',
         brand : "us store",
         price: 61988,
         cutprice: 65000,
@@ -165,6 +188,7 @@ var database = [
         image: "https://m.media-amazon.com/images/I/81Wx7hw9vwL._AC_US218_.jpg"      
       },
       {
+        brandname : 'amazon',
         brand : "us store",
         price: 118821,
         cutprice: 127509,
@@ -172,6 +196,7 @@ var database = [
         image: "https://m.media-amazon.com/images/I/61SQz8S+fEL._AC_US218_.jpg"      
       },
       {
+        brandname : 'amazon basics',
         brand : "us store",
         price: 91155,
         cutprice: 94155,
