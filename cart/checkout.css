@@ -43,11 +43,19 @@
   text-align: center;
 }
 
-.order {
+#scrollbox {
+  /* border: 1px solid red; */
+  height: 380px;
   width: 84%;
-  height: 30%;
+  overflow-y: scroll;
+}
+
+.order {
+  width: 95%;
+  height: 300px;
   border: 1px solid orange;
   border-radius: 7px;
+  margin: 2%;
 }
 
 .deliverydays {
@@ -151,8 +159,8 @@ form > select {
   color: white;
   font-weight: bold;
   font-size: 17px;
-  margin-left: 30%;
-  margin-top: 2.4%;
+  margin-left: 28%;
+  margin-top: 3.2%;
   cursor: pointer;
 }
 

@@ -20,28 +20,18 @@
         <div class="carddiv">
           <div>
             <input
-              type="number"
               id="cardnumber"
-              class="name"
-              placeholder="1234 1234 1234 1234"
-             
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{13,19}"
+              autocomplete="cc-number"
+              maxlength="19"
+              placeholder="xxxx xxxx xxxx xxxx"
             />
           </div>
           <div class="monthcvv">
-            <input
-              type="number"
-              id="month"
-              class="name"
-              placeholder="M / Y"
-             
-            />
-            <input
-              type="number"
-              id="cvv"
-              class="name"
-              placeholder="CVC"
-            
-            />
+            <input type="number" id="month" class="name" placeholder="M / Y" />
+            <input type="number" id="cvv" class="name" placeholder="CVC" />
           </div>
         </div>
         <div class="seq">
@@ -67,7 +57,9 @@
           <p class="ptag">Save card for future purchases</p>
         </div>
       </div>
-      <div id="placeorder"><button id="order" onclick="payNow()" >Place Order</button></div>
+      <div id="placeorder">
+        <button id="order" onclick="payNow()">Place Order</button>
+      </div>
     </div>
   </body>
 </html>

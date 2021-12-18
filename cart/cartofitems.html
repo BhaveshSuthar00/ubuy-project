@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="orderlist">
-      <a href="/mainproject page/productmainpage.html">Continue Shopping</a>
+      <a href="">Continue Shopping</a>
     </div>
     <!-- <div>continue shopping</div> -->
     <div class="container">
@@ -30,18 +30,47 @@
         </div>
         <div id="inputdata"></div>
       </div>
-      
+
       <!-- ankit part -->
-      <div id="payment">
 
+      <div class="ordersummary">
+        <div class="order">
+          <div class="orderbox">
+            <div class="orderbox1"><h3 class="h3">Order Summary</h3></div>
+          </div>
+          <div class="orderbox">
+            <div class="orderbox1"><p class="paytag">Subtotal:</p></div>
+            <div class="orderbox4"></div>
+          </div>
+          <div class="orderbox">
+            <div class="orderbox2"><p class="paytag">Shipping Fee:</p></div>
+            <div class="orderbox5"></div>
+          </div>
+          <div class="orderbox">
+            <div class="orderbox3"><p class="paytag">Estimated Total:</p></div>
+            <div class="orderbox6"></div>
+          </div>
 
+          <hr />
+          <button
+            class="proceedbutton"
+            type="button"
+            onclick="proceedToCheckout()"
+            title="Proceed to Checkout"
+          >
+            <i class="fas fa-lock"></i> Proceed to Checkout
+          </button>
+          <div class="discountcodes"><h3 class="h3">Discount Codes</h3></div>
+          <div class="discountcodes">
+            <h4 class="h4">Enter your coupon code if you have one.</h4>
+          </div>
+          <input type="text" />
 
-
-
+          <button class="applycoupon">Apply Coupon</button>
+        </div>
       </div>
     </div>
-    <div>
-    </div>
+      
     <!-- footer part of cart -->
     <footer class="footerofcart">
       <div id="finaltable">
@@ -214,8 +243,9 @@
       <div>
         <div id="subfooter-row1">
           <div>UBUY POPULAR SEARCHES</div>
-          <div id="subfooter-subdelivery">Delivery: 
-            <select  name="" id="subfooter-countrynames">
+          <div id="subfooter-subdelivery">
+            Delivery:
+            <select name="" id="subfooter-countrynames">
               <option value="">India</option>
               <option value="">Hong Kong</option>
               <option value="">Japan</option>
@@ -236,7 +266,7 @@
             </select>
           </div>
         </div>
-        <hr>
+        <hr />
         <div id="subfooter-row2">
           <ul>
             <li><a href="#">Mobile & Tab</a></li>
@@ -249,7 +279,7 @@
             <li><a href="#">Boys Jeans</a></li>
           </ul>
         </div>
-        <hr>
+        <hr />
         <div id="subfooter-row3">
           <div>Copyright © 2021 Ubuy Co. All rights reserved.</div>
           <div id="subfooter-row3-ul">
@@ -262,9 +292,9 @@
           </div>
 
           <div id="subfooter-row3-lastcol">
-            <div>Follow Us</div> 
+            <div>Follow Us</div>
             <div>
-             <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
               <a href="#"><i class="fab fa-instagram"></i></a>
               <a href="#"><i class="fab fa-youtube"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
