@@ -5,7 +5,7 @@
 }
 
 .smallBox {
-    height: 350px;
+    height: 230px;
     width: 100%;
     margin-bottom: 2%;
     margin-top: 3%;
@@ -20,13 +20,13 @@
 
 .heading {
     width: 38%;
-    font-size: 22px;
+    font-size: 15px;
     padding: 0% 1%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .line {
-    height: 7px;
+    height: 5px;
     width: 60%;
     margin-top: 1.7%;
     background-color: rgb(196, 193, 193);
@@ -57,7 +57,7 @@
     height: 80%;
     padding: 3%;
     margin-top: 3%;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     color: rgb(58, 57, 57);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -77,13 +77,13 @@
 
 .heading2 {
     width: 16%;
-    font-size: 22px;
+    font-size: 15px;
     padding: 0% 1%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .line2 {
-    height: 7px;
+    height: 5px;
     width: 100%;
     margin-top: 1.7%;
     background-color: rgb(206, 202, 202);
@@ -97,7 +97,7 @@
 }
 
 .low>div {
-    height: 100%;
+    height: 80%;
     width: 22%;
     border-radius: 3%;
     border: 3px solid rgb(233, 230, 230);
@@ -110,11 +110,11 @@
 }
 
 .prod {
-    height: 18%;
+    height: 15%;
     width: 80%;
     padding: 4% 5%;
     text-align: justify;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-left: 6%;
@@ -125,7 +125,7 @@
 }
 
 .box {
-    height: 650px;
+    height: 480px;
     width: 100%;
     margin-bottom: 3%;
 
@@ -158,7 +158,7 @@
     height: 50%;
     padding: 2%;
     width: 28%;
-    font-size: 23px;
+    font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     margin-left: 5%;
@@ -170,7 +170,7 @@
     height: 50%;
     padding: 2%;
     width: 32%;
-    font-size: 23px;
+    font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     margin-left: 5%;
@@ -182,7 +182,7 @@
     height: 50%;
     padding: 2%;
     width: 32%;
-    font-size: 23px;
+    font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     margin-left: 5%;
@@ -194,7 +194,7 @@
     height: 50%;
     padding: 2%;
     width: 32%;
-    font-size: 23px;
+    font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     margin-left: 5%;
@@ -204,7 +204,7 @@
 
 .heart {
     height: 80%;
-    width: 8%;
+    width: 10%;
     margin-top: 2%;
     margin-right: 5%;
 }
@@ -228,7 +228,7 @@
     width: 80%;
     margin-top: 2%;
     margin-left: 5%;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     margin-right: 3%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -237,7 +237,7 @@
 .icon {
 
     margin-top: 4%;
-    height: 40%;
+    height: 35%;
     width: 8%;
     margin-right: 3%;
     border: 1px solid rgb(190, 187, 187);
@@ -254,7 +254,7 @@
 .left {
     height: 100%;
     width: 50%;
-    font-size: 30px;
+    font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -271,36 +271,37 @@ h4 {
 h5 {
     color: rgb(218, 47, 76);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 50px;
+    font-size: 42px;
     font-weight: bold;
 }
 
 #btn {
-    width: 50%;
+    width: 55%;
     font-weight: bold;
-    font-size: 28px;
-    padding: 4%;
-    border-radius: 5% 5%;
+    font-size: 20px;
+    padding: 5% 7%;
+    border-radius: 28px;
     background-color: rgb(235, 154, 5);
     color: rgb(253, 253, 250);
 }
 
 #btn2 {
-    width: 65%;
+    width: 60%;
     font-weight: bold;
-    font-size: 25px;
-    padding: 5%;
-    border-radius: 5% 5%;
+    font-size: 16px;
+    margin-top: 10%;
+    padding: 7% 7%;
+    border-radius: 15px;
     background-color: rgb(4, 178, 247);
     color: white;
 }
 
 #btn3 {
-    width: 65%;
+    width: 60%;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 16px;
     padding: 5%;
-    border-radius: 5% 5%;
+    border-radius: 15px;
     background-color: rgb(228, 44, 75);
     color: white;
 }
@@ -354,7 +355,7 @@ img {
 }
 
 .star {
-    height: 170px;
+    height: 120px;
     width: 93%;
     padding: 3%;
     display: flex;
@@ -364,8 +365,8 @@ img {
 }
 
 .left1 {
-    height: 90%;
-    width: 28%;
+    height: 80%;
+    width: 25%;
     display: flex;
 }
 
@@ -374,21 +375,21 @@ img {
     width: 22%;
     border-radius: 14%;
     margin-top: 4%;
-    border: 10px solid rgb(231, 178, 3);
+    border: 7px solid rgb(231, 178, 3);
 }
 
 .cont1 {
     height: 100%;
     width: 70%;
     margin-left: 5%;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .right1 {
     height: 90%;
     width: 65%;
     margin-top: 1%;
-    font-size: 37px;
+    font-size: 24px;
     font-family: cursive;
 }
 
@@ -405,13 +406,13 @@ img {
 }
 
 .head2 {
-    font-size: 36px;
+    font-size: 28px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .para2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 50px;
-    font-size: 23px;
+    line-height: 45px;
+    font-size: 18px;
     color: rgb(66, 65, 65);
 }
