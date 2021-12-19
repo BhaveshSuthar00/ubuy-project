@@ -1,5 +1,6 @@
 var datastorage = JSON.parse(localStorage.getItem("pro")) || [];
 displayTable(datastorage);
+var addon = 0;
 function displayTable(datastorage) {
   var array = [];
   document.querySelector("#inputdata").textContent = "";
@@ -48,54 +49,19 @@ function displayTable(datastorage) {
     lab.textContent = "Add to Wishlist";
     div2.append(p1, h3, atag);
     atag.append(p, lab);
-
-    // Ankit
-    //    var main = document.createElement("div");
-    //    main.setAttribute("id", "prolist1");
-
-    // var subtotal= document.createElement("div");
-    // subtotal.setAttribute("class", "subtotal");
-    // var  price1= document.createElement("div");
-    // price1.setAttribute("class", "price1");
-    // price1.textContent = "Subtotal";
-    // var price2= document.createElement("div");
-    // price2.setAttribute("class", " price2");
-    // price2.textContent = "INR"+" "+elem.price;
-    // subtotal.append( price1, price2);
-
-    // var shipping= document.createElement("div");
-    // shipping.setAttribute("class", "shipping");
-    // var  shipping1= document.createElement("div");
-    // shipping1.setAttribute("class", "shipping1");
-    // shipping1.textContent = "shipping Fee:";
-    // var shipping2= document.createElement("div");
-    // shipping2.setAttribute("class", "shipping2");
-    // shipping2.textContent = "Calculating at checkout";
-    // shipping.append(shipping1,shipping2);
-
-    // var etotal= document.createElement("div");
-    // capacity.setAttribute("class", "etotal");
-    // var etotal1= document.createElement("div");
-    // etotal1.setAttribute("class", "etotal1");
-    // etotal1.textContent = "Capacity:";
-    // var etotal2= document.createElement("div");
-    // sizediv.setAttribute("class", " etotal2");
-    // etotal2.textContent = "INR"+" "+elem.price;
-    // capacity.append(etotal2, etotal2);
-
-    // // main.append(subtotal,shipping);
-    // // document.querySelector(".ordersummary").append(main);
-    //  // Ankit
-
     var div3 = document.createElement("div");
     div3.setAttribute("class", "div3ofproduct");
     var price = document.createElement("p");
     price.textContent = elem.price;
+    array.push(Number(elem.price));
     price.setAttribute("class", "displayprice");
     var inputnum = document.createElement("input");
+
+    
     inputnum.setAttribute("class", "countofproduct");
     inputnum.type = "number";
     var divfor = document.createElement("div");
+    divfor.setAttribute('class','dustpin');
     var bust = document.createElement("img");
     bust.setAttribute("class", "dustbinimg");
     bust.setAttribute(
@@ -117,16 +83,22 @@ function displayTable(datastorage) {
     document.querySelector("#inputdata").append(main);
   });
 
-  //   var tot =array.reduce(function(ac,av){
+    var tot =array.reduce(function(ac,av){
 
-  //       return ac+av
-  //     })
-  //     var data=document.querySelector("#pricetotal");
-  //     data.textContent=tot;
-  //     console.log(tot)
-  //     console.log(array)
+        return ac+av
+      });
+      var data=document.querySelector(".totalprice-here");
+      data.textContent=tot;
+      var data2 =document.querySelector(".totalprice");
+      data2.textContent= tot;
+      var count = document.querySelector(".totalcount");
+      document.querySelector(".totalcount").textContent = "";
+      var count2 = array.length;
+      count.textContent = count2;
+      
+      var totalpriceofitem = localStorage.setItem('totalprice', JSON.stringify(tot));
 }
-
+var k = JSON.parse(localStorage.getItem('totalprice'));
 function addToW(index) {
   console.log(datastorage[index]);
 }

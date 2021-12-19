@@ -71,7 +71,8 @@ function displayTable(datastorage) {
     document.querySelector(".order").append(main);
   });
 }
-
+var k = JSON.parse(localStorage.getItem('totalprice'));
+document.querySelector('.paybox7').textContent = k;
 // here ankit
 function proceedToCheckout() {
   window.location.href = "checkout.html";

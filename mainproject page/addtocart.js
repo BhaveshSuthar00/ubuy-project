@@ -26,7 +26,8 @@ var arr = JSON.parse(localStorage.getItem("indexvalue")) || [];
             var object = {
                 image : elem.image,
                 brand : elem.brandnamekk,
-                name : elem.name
+                name : elem.name,
+                price : elem.price
             }     
             cartitemobject.push(object);
             localStorage.setItem('pro',JSON.stringify(cartitemobject));

@@ -89,3 +89,8 @@ function displayTable(datastorage) {
 function proceedToCheckout() {
   window.location.href = "checkout.html";
 }
+var k = JSON.parse(localStorage.getItem('totalprice'));
+document.querySelector('.paybox7').textContent = k;
+var grand = k+777;
+var doo = document.querySelector('.paybox10');
+doo.textContent = grand; 
