@@ -6,360 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <script
+    src="https://kit.fontawesome.com/2281802e38.js"
+    crossorigin="anonymous"
+  ></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <style>
-        .maincont {
-            height: 580px;
-            padding: 2%;
-            margin: auto;
-            width: 95%;
-            display: flex;
-            margin-bottom: 5%;
-        }
-
-        .leftimg {
-            height: 100%;
-            width: 35%;
-        }
-
-        .boximg {
-            height: 68%;
-            border-radius: 15px;
-            width: 88%;
-            margin-left: 6%;
-            margin-top: 7%;
-            border: 2px solid rgb(116, 14, 14);
-        }
-
-        .social {
-            margin: auto;
-            height: 10%;
-            width: 55%;
-            justify-content: end;
-            margin-top: 7%;
-            display: flex;
-        }
-
-        .share {
-            height: 100%;
-            margin-top: 2%;
-            width: 45%;
-            font-size: 30px;
-            font-weight: bold;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-
-        .sicon {
-            height: 80%;
-            width: 18%;
-            border-radius: 32px;
-        }
-
-        .midimg {
-            height: 6%;
-            width: 3%;
-        }
-
-        .rightcont {
-            height: 100%;
-            width: 64%;
-            margin-left: 3%;
-        }
-
-        .descrip {
-            height: 25%;
-            width: 100%;
-            border: 3px solid rgb(12, 197, 182);
-        }
-
-        .item {
-            margin-top: 2%;
-            height: 8%;
-            width: 37%;
-            border: 2px solid rgb(167, 204, 0);
-        }
-
-        .cont22 {
-            margin-top: 1%;
-            font-weight: bold;
-            font-size: 20px;
-            margin-bottom: 2%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: rgb(19, 198, 204);
-        }
-
-        .cont23 {
-            display: flex;
-            height: 55px;
-            width: 18%;
-            justify-content: space-between;
-        }
-
-        .aval {
-            font-size: 16px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        #instock {
-            font-weight: bold;
-            font-size: 18px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: rgb(19, 198, 204);
-        }
-
-        #btn0 {
-            width: 22%;
-            font-weight: bold;
-            font-size: 15px;
-            margin: auto;
-            padding: 2%;
-            margin-top: 3%;
-            border-radius: 36px;
-            background-color: rgb(243, 161, 10);
-            color: rgb(253, 253, 250);
-        }
-
-        #btn1 {
-            width: 62%;
-            font-weight: bold;
-            font-size: 15px;
-            margin: auto;
-            padding: 4%;
-            margin-top: 3%;
-            border-radius: 12px;
-            background-color: rgb(243, 138, 0);
-            color: rgb(253, 253, 250);
-        }
-
-        label {
-            margin-top: 1%;
-            font-size: 16px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        select,
-        input {
-            width: 170px;
-            height: 40px;
-            border: 2px solid rgb(150, 149, 149);
-            font-size: 20px;
-        }
-
-        .cont9 {
-            height: 300px;
-            width: 93%;
-            font-size: 18px;
-            padding: 1%;
-            margin: auto;
-            line-height: 32px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            background-color: rgb(236, 231, 231);
-            color: rgb(32, 30, 30);
-        }
-
-        .head5 {
-            margin-left: 3%;
-        }
-
-        .boxcard {
-            display: flex;
-            height: 100px;
-            width: 100%;
-            border: 2px solid rgb(224, 224, 90);
-        }
-
-        select {
-            margin-top: 4%;
-            margin-left: 3%;
-        }
-
-        .lastcont {
-            margin-top: 2%;
-            height: 187px;
-            width: 100%;
-            font-weight: bold;
-            color: rgb(121, 119, 119);
-            font-size: 15px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .boxwas {
-            display: flex;
-            margin: auto;
-            height: 1500px;
-            width: 95%;
-            margin-top: 3%;
-            font-size: 17px;
-        }
-
-        .cusrating {
-            height: 60%;
-            width: 23%;
-            padding: 2%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            border: 2px solid rgb(250, 250, 245);
-        }
-
-        .cusreview {
-            padding: 2%;
-            height: 92%;
-            width: 80%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        input {
-            width: 45%;
-            height: 15px;
-            padding: 1%;
-            font-size: 16px;
-            border: 1px solid rgb(233, 232, 232);
-            margin-top: 1.5%;
-            margin-left: 1%;
-        }
-
-        .ratehead {
-            font-size: 20px;
-            margin-bottom: 3%;
-            font-weight: bold;
-        }
-
-        .revhead {
-            font-size: 38px;
-            margin-bottom: 3%;
-            font-weight: bold;
-        }
-
-        .starbig {
-            font-size: 24px;
-            color: rgb(129, 128, 128);
-        }
-
-        .side {
-            font-size: 20px;
-            margin-bottom: 2%;
-        }
-
-        .bar-container {
-            width: 90%;
-            height: 17px;
-            background-color: #e7e6e6;
-            text-align: center;
-            color: white;
-        }
-
-        .middle {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .sideright {
-            font-size: 16px;
-            margin-left: 3%;
-        }
-
-        .bar-5 {
-            width: 60%;
-            height: 100%;
-            background-color: #ff9800;
-        }
-
-        .bar-4 {
-            width: 30%;
-            height: 100%;
-            background-color: #ff9800;
-        }
-
-        .bar-3 {
-            width: 10%;
-            height: 100%;
-            background-color: #ff9800;
-        }
-
-        .bar-2 {
-            width: 4%;
-            height: 100%;
-            background-color: #ff9800;
-        }
-
-        .bar-1 {
-            width: 15%;
-            height: 100%;
-            background-color: #ff9800;
-        }
-
-        .row {
-            margin-bottom: 9%;
-        }
-
-        .checked {
-            color: orange;
-        }
-
-        .navheadis {
-            width: 100%;
-            height: 7%;
-            margin-bottom: 5%;
-            background-color: rgb(226, 220, 220);
-        }
-
-        .reviewcont {
-            height: 140px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid rgb(52, 53, 52);
-        }
-
-        .revimg {
-            height: 60%;
-            margin-top: 3%;
-            width: 23%;
-            display: flex;
-        }
-
-        .imgbox {
-            height: 100%;
-            width: 40%;
-        }
-
-        .namebox {
-            height: 40%;
-            width: 33%;
-            padding: 9%;
-            font-size: 22px;
-        }
-
-        .revcont {
-            height: 70%;
-            width: 72%;
-            font-size: 25px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 15px;
-        }
-
-        .context{ 
-            height: 270px;
-            width: 93%;
-            font-size: 16px;
-            padding: 1%;
-            margin: auto;
-            line-height: 32px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            background-color: rgb(243, 242, 242);
-            color: rgb(32, 30, 30);
-            
-        }
-
-        .yellowhead{
-            font-weight: bold;
-            text-decoration: underline;
-            color: rgb(238, 196, 9);
-        }
-
-        
-    </style>
+    <link rel="stylesheet" href="addtocart.css">
 </head>
 
 <body>
@@ -419,8 +71,13 @@
                     </select>
                 </div>
 
-
-                <button id="btn0">Add to Cart</button>
+                <div id="addtocartdiv">
+                    <button> 
+                      <i id="ddd" class="fas fa-shopping-cart"></i>
+                    <span id="btn0">Add to Cart</span>
+                    </button>
+                  </div>
+                <!-- <button id="btn0">Add to Cart</button> -->
 
 
             </div>
@@ -543,22 +200,16 @@
 
         <div class="cusreview">
             <div class="revhead">Customer Reviews</div>
-            <div class="navheadis">
-                <input id="navlen" type="text" placeholder="enter the search items">
-            </div>
-
             <div class="revmain">
                 <div class="reviewcont">
                     <div class="revimg">
                         <div class="imgbox">
                             <img src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/user-avator.png"
-                                alt="" height="100%" width="100%">
+                                alt="" height="100%" width="80%">
                         </div>
                         <div class="namebox">Prachi</div>
                     </div>
                     <div class="revcont">
-                        <h2>Great fire stick for the price but not for 4K TV</h2>
-                        <p>If you’re looking for a basic fire stick, this is a great one for the price!</p>
                         <div class="starbig">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -566,6 +217,8 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                         </div>
+                        <h2>Great fire stick for the price but not for 4K TV</h2>
+                        <p>If you’re looking for a basic fire stick, this is a great one for the price!</p>
                     </div>
 
                 </div>
@@ -574,13 +227,11 @@
                     <div class="revimg">
                         <div class="imgbox">
                             <img src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/user-avator.png"
-                                alt="" height="100%" width="100%">
+                                alt="" height="100%" width="80%">
                         </div>
                         <div class="namebox">Bhavesh</div>
                     </div>
                     <div class="revcont">
-                        <h2>easy to set up</h2>
-                        <p>easy to set up and easy to use. I love it.</p>
                         <div class="starbig">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -588,6 +239,8 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                         </div>
+                        <h2>easy to set up</h2>
+                        <p>easy to set up and easy to use. I love it.</p>
                     </div>
 
                 </div>
@@ -596,14 +249,11 @@
                     <div class="revimg">
                         <div class="imgbox">
                             <img src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/user-avator.png"
-                                alt="" height="100%" width="100%">
+                                alt="" height="100%" width="80%">
                         </div>
                         <div class="namebox">Suresh</div>
                     </div>
                     <div class="revcont">
-                        <h2>Not happy as I can’t find help to set it up. </h2>
-                        <p>Can’t set it up Need help Need a real person to take me thru so I can use it
-                        </p>
                         <div class="starbig">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
@@ -611,6 +261,9 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                         </div>
+                        <h2>Not happy as I can’t find help to set it up. </h2>
+                        <p>Can’t set it up Need help Need a real person to take me thru so I can use it
+                        </p>
                     </div>
 
                 </div>
@@ -619,13 +272,11 @@
                     <div class="revimg">
                         <div class="imgbox">
                             <img src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/user-avator.png"
-                                alt="" height="100%" width="100%">
+                                alt="" height="100%" width="80%">
                         </div>
                         <div class="namebox">Santosh</div>
                     </div>
                     <div class="revcont">
-                        <h2>Great</h2>
-                        <p>Great</p>
                         <div class="starbig">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -633,6 +284,8 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star "></span>
                         </div>
+                        <h2>Great</h2>
+                        <p>Great</p>
                     </div>
 
                 </div>
@@ -641,13 +294,11 @@
                     <div class="revimg">
                         <div class="imgbox">
                             <img src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/user-avator.png"
-                                alt="" height="100%" width="100%">
+                                alt="" height="100%" width="80%">
                         </div>
                         <div class="namebox">Ankit</div>
                     </div>
                     <div class="revcont">
-                        <h2>Kind of impressed</h2>
-                        <p>The noise cancelling works so well.</p>
                         <div class="starbig">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -655,6 +306,8 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star "></span>
                         </div>
+                        <h2>Kind of impressed</h2>
+                        <p>The noise cancelling works so well.</p>
                     </div>
 
                 </div>
@@ -663,13 +316,11 @@
                     <div class="revimg">
                         <div class="imgbox">
                             <img src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/user-avator.png"
-                                alt="" height="100%" width="100%">
+                                alt="" height="100%" width="80%">
                         </div>
                         <div class="namebox">Tushar</div>
                     </div>
                     <div class="revcont">
-                        <h2>It’s so much better then the old one</h2>
-                        <p>I love the remote with the Hula button</p>
                         <div class="starbig">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -677,6 +328,8 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                         </div>
+                        <h2>It’s so much better then the old one</h2>
+                        <p>I love the remote with the Hula button</p>
                     </div>
 
                 </div>
@@ -685,13 +338,11 @@
                     <div class="revimg">
                         <div class="imgbox">
                             <img src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/user-avator.png"
-                                alt="" height="100%" width="100%">
+                                alt="" height="100%" width="80%">
                         </div>
                         <div class="namebox">Hardik</div>
                     </div>
                     <div class="revcont">
-                        <h2>My cousin loves them</h2>
-                        <p>Made her happy</p>
                         <div class="starbig">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -699,6 +350,8 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star "></span>
                         </div>
+                        <h2>My cousin loves them</h2>
+                        <p>Made her happy</p>
                     </div>
 
                 </div>
@@ -707,14 +360,11 @@
                     <div class="revimg">
                         <div class="imgbox">
                             <img src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/user-avator.png"
-                                alt="" height="100%" width="100%">
+                                alt="" height="100%" width="80%">
                         </div>
                         <div class="namebox">Limra</div>
                     </div>
                     <div class="revcont">
-                        <h2>It works fine-could be a tad thicker</h2>
-                        <p>In case of falls, but for general protection it works exactly like I wanted it to on my A55.
-                        </p>
                         <div class="starbig">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -722,9 +372,15 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star "></span>
                         </div>
+                        <h2>It works fine-could be a tad thicker</h2>
+                        <p>In case of falls, but for general protection it works exactly like I wanted it to on my A55.
+                        </p>
                     </div>
 
                 </div>
+                    <div class="loadmoreforreview">
+                        <button>Load More Reviews</button>
+                    </div>
             </div>
         </div>
 
@@ -740,8 +396,241 @@
             </ul>
         </div>
     </div>  
-
-    <hr>
+<br>
+<br>
+    <hr class="silverlining">
+    <br>
+    <br>
+    <footer class="footerofcart">
+        <div id="finaltable">
+          <div class="footerlinks">
+            <h4 class="inlinefooter">
+              <img
+                width="30px"
+                src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/new-home/images/footer/quick-links.svg"
+                alt=""
+              />
+              QUICK LINKS
+            </h4>
+            <hr />
+            <ul class="listoflinks">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Corporate Enquiries</a></li>
+              <li><a href="#">Intellectual Property</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">Customs Tariffs And Fees</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+            </ul>
+          </div>
+  
+          <div class="footerlinks">
+            <h4 class="inlinefooter">
+              <img
+                width="30px"
+                src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/new-home/images/footer/ubuy-important-links.svg"
+                alt=""
+              />
+              UBUY
+            </h4>
+            <hr />
+            <ul class="listoflinks">
+              <li><a href="#">Customer Reviews</a></li>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">FRQ</a></li>
+              <li><a href="#">About Ucredit</a></li>
+              <li><a href="#">Ubuy Affiliates</a></li>
+            </ul>
+          </div>
+          <div class="footerlinks">
+            <h4 class="inlinefooter">
+              <img
+                width="30px"
+                src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/new-home/images/footer/payment-links.svg"
+                alt=""
+              />
+              PAYMENT
+            </h4>
+            <hr />
+            <ul class="listoflinks">
+              <li>
+                <img
+                  src="https://d2ati23fc66y9j.cloudfront.net/ubuycom/homebanner/payment_methods-158997744021.png"
+                  alt=""
+                />
+                <a href="#">Paypal</a>
+              </li>
+              <li>
+                <img
+                  src="https://d2ati23fc66y9j.cloudfront.net/ubuycom/homebanner/payment_methods-159064539994.png"
+                  alt=""
+                />
+                <a href="#">Visa</a>
+              </li>
+              <li>
+                <img
+                  src="https://d2ati23fc66y9j.cloudfront.net/ubuycom/homebanner/payment_methods-159049393275.png"
+                  alt=""
+                />
+                <a href="#">mastercard</a>
+              </li>
+              <li>
+                <img
+                  src="https://d2ati23fc66y9j.cloudfront.net/ubuycom/homebanner/payment_methods-159049550294.png"
+                  alt=""
+                />
+                <a href="#">American Expess</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="footerlinks">
+            <h4 class="inlinefooter">
+              <img
+                width="30px"
+                src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/new-home/images/footer/shipping-links.svg"
+                alt=""
+              />
+              SHIPPING
+            </h4>
+            <hr />
+            <ul class="listoflinks">
+              <li>
+                <img
+                  src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/new-home/images/footer/ufulfilled-icon.svg"
+                  alt=""
+                />
+                <a href="#">Express Shipping 3-6 Business Days</a>
+              </li>
+              <li>
+                <img
+                  src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/new-home/images/footer/u-not-fulfilled-icon.svg"
+                  alt=""
+                />
+                <a href="#">Standard Shipping 10+ Business Days</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footerlinks">
+            <h4 class="inlinefooter">
+              <img
+                width="30px"
+                src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/new-home/images/footer/countries-covered-links.svg"
+                alt=""
+              />
+              CITIES COVERED
+            </h4>
+            <hr />
+            <ul class="listoflinks">
+              <li><a href="#">Mumbai</a></li>
+              <li><a href="#">Delhi</a></li>
+              <li><a href="#">Bangalore</a></li>
+              <li><a href="#">Hyderabad</a></li>
+              <li><a href="#">Ahmedabad</a></li>
+              <li><a href="#">Chennai</a></li>
+              <li><a href="#">Kolkata</a></li>
+              <li><a href="#">Surat</a></li>
+            </ul>
+          </div>
+  
+          <div class="footerlinks">
+            <h4 class="inlinefooter">
+              <img
+                width="30px"
+                src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/new-home/images/footer/support-links.svg"
+                alt=""
+              />
+              24/7 Support
+            </h4>
+            <hr />
+            <ul class="listoflinks">
+              <p>24/7 Support</p>
+              <p>Customer Services</p>
+              <div>
+                <div>Download Our App</div>
+                <div>
+                  <a href="#">
+                    <img
+                      src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/app-store-icon.svg"
+                      alt=""
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="https://d3ulwu8fab47va.cloudfront.net/skin/frontend/default/ubuycom-v1/images/play-store-icon.svg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div id="subfooter-row1">
+            <div>UBUY POPULAR SEARCHES</div>
+            <div id="subfooter-subdelivery">Delivery: 
+              <select  name="" id="subfooter-countrynames">
+                <option value="">India</option>
+                <option value="">Hong Kong</option>
+                <option value="">Japan</option>
+                <option value="">Malaysia</option>
+                <option value="">Maldives</option>
+                <option value="">Philippines</option>
+                <option value="">Singapore</option>
+                <option value="">South Korea</option>
+                <option value="">Taiwan</option>
+                <option value="">Thailand</option>
+                <option value="">Vietnam</option>
+                <option value="">Bangladesh</option>
+                <option value="">Georgia</option>
+                <option value="">Kazakhstan</option>
+                <option value="">Sri Lanka</option>
+                <option value="">Uzbekistan</option>
+                <option value="">View All countires</option>
+              </select>
+            </div>
+          </div>
+          <hr>
+          <div id="subfooter-row2">
+            <ul>
+              <li><a href="#">Mobile & Tab</a></li>
+              <li><a href="#">Fashion</a></li>
+              <li><a href="#">Electronics</a></li>
+              <li><a href="#">Perfumes</a></li>
+              <li><a href="#">Beauty Care</a></li>
+              <li><a href="#">Tools</a></li>
+              <li><a href="#">Video Games</a></li>
+              <li><a href="#">Boys Jeans</a></li>
+            </ul>
+          </div>
+          <hr>
+          <div id="subfooter-row3">
+            <div>Copyright © 2021 Ubuy Co. All rights reserved.</div>
+            <div id="subfooter-row3-ul">
+              <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+  
+            <div id="subfooter-row3-lastcol">
+              <div>Follow Us</div> 
+              <div>
+               <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 </body>
 
 </html>
