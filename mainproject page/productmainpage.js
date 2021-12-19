@@ -281,10 +281,11 @@ function displayTable (database){
                 price : elem.price,
                 cutprice : elem.cutprice,
                 image : elem.image,
+                brandnamekk : elem.brandname
             }
             indexfors.push(valueforproduct);
             localStorage.setItem('indexvalue',JSON.stringify(indexfors));
-            window.location.href = "demo.html"
+            window.location.href = "addtocart.html"
         })
         
         document.querySelector('#inputfromdata').append(containerdiv);
