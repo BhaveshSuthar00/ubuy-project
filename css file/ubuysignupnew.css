@@ -74,6 +74,12 @@
 .explore a:hover {
   background-color: #ffb100;
 }
+.explore a {
+  background-color: white;
+}
+.dropdown-content a {
+  background-color: white;
+}
 .dropdown:hover .dropdown-content {
   display: block;
 }

@@ -18,6 +18,8 @@ var arr = JSON.parse(localStorage.getItem("indexvalue")) || [];
       var item = document.createElement('p');
       item.setAttribute('class','itemname-tag');
       item.textContent = "Item #: 41738239";
+      var starting = document.querySelector('.nameof-the-product');
+      starting.textContent = elem.name;
       document.querySelector('.descrip').append(product,productname,item)
       var priceofproduct = document.createElement('span')
       priceofproduct.textContent = elem.price
@@ -34,4 +36,4 @@ var arr = JSON.parse(localStorage.getItem("indexvalue")) || [];
       });
     });
   }
-console.log(cartitemobject)
+console.log(cartitemobject);
