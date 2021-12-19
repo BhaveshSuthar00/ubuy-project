@@ -1,7 +1,7 @@
 var datastorage = JSON.parse(localStorage.getItem("pro")) || [];
 displayTable(datastorage);
 function displayTable(datastorage) {
-  var array=[];
+  var array = [];
   document.querySelector("#inputdata").textContent = "";
   datastorage.map(function (elem, index) {
     
@@ -12,7 +12,6 @@ function displayTable(datastorage) {
     var span = document.createElement("span");
     span.textContent = " Wednesday, December 22";
     outter.append(date, span);
-    
     var main = document.createElement("div");
     main.setAttribute("id", "prolist");
     var div1 = document.createElement("div");
@@ -50,33 +49,29 @@ function displayTable(datastorage) {
     div2.append(p1, h3, atag);
     atag.append(p, lab);
 
-     
-   // Ankit
-//    var main = document.createElement("div");
-//    main.setAttribute("id", "prolist1");
+    // Ankit
+    //    var main = document.createElement("div");
+    //    main.setAttribute("id", "prolist1");
 
+    // var subtotal= document.createElement("div");
+    // subtotal.setAttribute("class", "subtotal");
+    // var  price1= document.createElement("div");
+    // price1.setAttribute("class", "price1");
+    // price1.textContent = "Subtotal";
+    // var price2= document.createElement("div");
+    // price2.setAttribute("class", " price2");
+    // price2.textContent = "INR"+" "+elem.price;
+    // subtotal.append( price1, price2);
 
-// var subtotal= document.createElement("div");
-// subtotal.setAttribute("class", "subtotal");
-// var  price1= document.createElement("div");
-// price1.setAttribute("class", "price1");
-// price1.textContent = "Subtotal";
-// var price2= document.createElement("div");
-// price2.setAttribute("class", " price2");
-// price2.textContent = "INR"+" "+elem.price; 
-// subtotal.append( price1, price2);
-
-
-
-// var shipping= document.createElement("div");
-// shipping.setAttribute("class", "shipping");
-// var  shipping1= document.createElement("div");
-// shipping1.setAttribute("class", "shipping1");
-// shipping1.textContent = "shipping Fee:";
-// var shipping2= document.createElement("div");
-// shipping2.setAttribute("class", "shipping2");
-// shipping2.textContent = "Calculating at checkout";
-// shipping.append(shipping1,shipping2);
+    // var shipping= document.createElement("div");
+    // shipping.setAttribute("class", "shipping");
+    // var  shipping1= document.createElement("div");
+    // shipping1.setAttribute("class", "shipping1");
+    // shipping1.textContent = "shipping Fee:";
+    // var shipping2= document.createElement("div");
+    // shipping2.setAttribute("class", "shipping2");
+    // shipping2.textContent = "Calculating at checkout";
+    // shipping.append(shipping1,shipping2);
 
     // var etotal= document.createElement("div");
     // capacity.setAttribute("class", "etotal");
@@ -85,13 +80,12 @@ function displayTable(datastorage) {
     // etotal1.textContent = "Capacity:";
     // var etotal2= document.createElement("div");
     // sizediv.setAttribute("class", " etotal2");
-    // etotal2.textContent = "INR"+" "+elem.price; 
+    // etotal2.textContent = "INR"+" "+elem.price;
     // capacity.append(etotal2, etotal2);
 
-// // main.append(subtotal,shipping);
-// // document.querySelector(".ordersummary").append(main);
-//  // Ankit
-
+    // // main.append(subtotal,shipping);
+    // // document.querySelector(".ordersummary").append(main);
+    //  // Ankit
 
     var div3 = document.createElement("div");
     div3.setAttribute("class", "div3ofproduct");
@@ -122,15 +116,15 @@ function displayTable(datastorage) {
     main.append(outter, divforItem);
     document.querySelector("#inputdata").append(main);
   });
-    
-//   var tot =array.reduce(function(ac,av){
 
-//       return ac+av
-//     })
-//     var data=document.querySelector("#pricetotal");
-//     data.textContent=tot;
-//     console.log(tot)
-//     console.log(array)
+  //   var tot =array.reduce(function(ac,av){
+
+  //       return ac+av
+  //     })
+  //     var data=document.querySelector("#pricetotal");
+  //     data.textContent=tot;
+  //     console.log(tot)
+  //     console.log(array)
 }
 
 function addToW(index) {

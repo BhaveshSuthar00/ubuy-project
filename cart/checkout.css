@@ -44,23 +44,28 @@
 }
 
 #scrollbox {
-  /* border: 1px solid red; */
+  /* border: 5px solid red; */
   height: 380px;
   width: 84%;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
+
+  /* background-color: rgb(154, 154, 192); */
 }
 
 .order {
-  width: 95%;
-  height: 300px;
-  border: 1px solid orange;
+  width: 100%;
+  height: 350px;
+  border: 2px solid orange;
   border-radius: 7px;
-  margin: 2%;
+  display: grid;
+  /* background-color: rgb(68, 189, 122); */
+  grid-template-columns: repeat(1, 1fr);
+  overflow-y: scroll;
 }
 
 .deliverydays {
   width: 50%;
-  height: 10%;
+  height: 30px;
   background-color: orange;
   margin-left: 10px;
   text-align: center;
@@ -69,9 +74,9 @@
 }
 
 .pay {
-  width:84%;
+  width: 84%;
   height: 47%;
-  border: 1px solid rgb(0, 0, 0);
+  border: 5px solid rgb(0, 0, 0);
   border-radius: 7px;
   margin-top: 15px;
 }
@@ -84,22 +89,31 @@
   border-bottom: 0.3px solid grey;
 }
 
-.paybox1,.paybox2,.paybox3,.paybox4,.paybox5,.paybox6,.paybox7,.paybox8,.paybox9,.paybox10{
+.paybox1,
+.paybox2,
+.paybox3,
+.paybox4,
+.paybox5,
+.paybox6,
+.paybox7,
+.paybox8,
+.paybox9,
+.paybox10 {
   width: 50%;
-  height: 100%;
+  height: 45px;
   /* border: 1px solid red; */
 }
 
 .proceedpay {
   height: 16%;
   width: 100%;
-  /* border: 0.3px solid black; */
+  /* border: 2px solid black; */
 }
 
 .des {
   width: 100%;
   height: 30%;
- border-top: 0.3px solid grey ;
+  border-top: 0.3px solid grey;
   border-radius: 5px;
 }
 
@@ -107,14 +121,14 @@
   margin-left: 30px;
   height: 100%;
   width: 50%;
-  border: 1px solid red;
+  /* border: 1 px solid red; */
   margin-top: 8px;
 }
 .cartimage {
   margin-left: 30px;
   height: 100%;
   width: 50%;
-  border: 1px solid red;
+  /* border: 1 px solid red; */
   margin-top: 1.5%;
   margin-left: 80%;
 }
@@ -138,11 +152,17 @@ form > select {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+.savebuttondiv{
+  height: 30px;
+  width: 20%;
+  /* border: 2px solid green; */
+}
 
 .savebutton {
   background-color: orange;
-  border-radius: 10px;
-  padding: 10px 50px;
+  border-radius: 5px;
+  height: 30px;
+  width: 100%;
   border: none;
   color: white;
   font-weight: bold;
@@ -154,7 +174,8 @@ form > select {
 .paybutton {
   background-color: orange;
   border-radius: 10px;
-  padding: 10px 30px;
+ height: 40px;
+ width: 40%;
   border: none;
   color: white;
   font-weight: bold;
@@ -224,8 +245,77 @@ li {
   padding: 10px;
 }
 
-.paytag{
+.paytag {
   margin-left: 13px;
   margin-top: 13px;
 }
 
+.paytag1 {
+  margin-left: 60%;
+  margin-top: 13px;
+}
+
+/* 
+checkout js new */
+#prolist {
+  display: flex;
+  margin-top: 15px;
+  height: 270px;
+  width: 95%;
+  margin-left: 12px;
+  background-color: rgb(249, 249, 249);
+}
+
+.img {
+  height: 100px;
+  width: 120px;
+  margin-left: 30px;
+  margin-top: 10px;
+  /* border: 1px solid red; */
+}
+
+.mainbody {
+  /* background-color: blue; */
+  width: 100%;
+  height: 270px;
+}
+.detail {
+  /* background-color: red; */
+  margin-top: 10px;
+  width: 90%;
+  height: 110px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.p1 {
+  /* background-color: red; */
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.capacity,
+.price,
+.brand1,
+.weight {
+  /* background-color: rgb(41, 150, 212); */
+  margin-left: 15px;
+  margin-top: 10px;
+  display: flex;
+}
+.capacitydiv,
+.branddiv1,
+.weight1,
+.price1 {
+  /* background-color: rgb(197, 52, 16); */
+  width: 30%;
+  height: 20px;
+  justify-content: space-between;
+}
+.sizediv,
+.branddiv2,
+.weight2,
+.price2 {
+  /* background-color: rgb(197, 52, 16); */
+  width: 30%;
+  height: 20px;
+  margin-left: 140px;
+}

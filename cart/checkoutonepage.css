@@ -43,23 +43,29 @@
 }
 
 #scrollbox {
-  /* border: 1px solid red; */
+  /* border: 5px solid red; */
   height: 380px;
   width: 100%;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
+
+  /* background-color: rgb(154, 154, 192); */
 }
 
 .order {
-  width: 95%;
-  height: 300px;
-  border: 1px solid orange;
+  width: 100%;
+  height: 350px;
+  border: 2px solid orange;
   border-radius: 7px;
-  margin: 2%;
+
+  display: grid;
+  /* background-color: rgb(68, 189, 122); */
+  grid-template-columns: repeat(1, 1fr);
+  overflow-y: scroll;
 }
 
 .deliverydays {
   width: 50%;
-  height: 10%;
+  height: 30px;
   background-color: orange;
   margin-left: 10px;
   text-align: center;
@@ -70,7 +76,7 @@
 .pay {
   width: 100%;
   height: 50%;
-  border: 1px solid rgb(0, 0, 0);
+  border: 5px solid rgb(0, 0, 0);
   border-radius: 7px;
   margin-top: 15px;
 }
@@ -98,7 +104,7 @@
 .paybox9,
 .paybox10 {
   width: 50%;
-  height: 100%;
+  height: 48px;
   /* border: 1px solid red; */
 }
 
@@ -213,10 +219,80 @@ li {
   padding: 10px;
 }
 
+.paytag1 {
+  margin-left: 60%;
+  margin-top: 13px;
+}
+
 .color {
   color: rgb(32, 30, 30);
 }
 .paytag {
   margin-left: 13px;
   margin-top: 13px;
+}
+
+/* 
+checkout js new */
+#prolist {
+  display: flex;
+  margin-top: 15px;
+  height: 270px;
+  width: 95%;
+  margin-left: 12px;
+  background-color: rgb(249, 249, 249);
+}
+
+.img {
+  height: 100px;
+  width: 120px;
+  margin-left: 30px;
+  margin-top: 10px;
+  /* border: 1px solid red; */
+}
+
+.mainbody {
+  /* background-color: blue; */
+  width: 100%;
+  height: 270px;
+}
+.detail {
+  /* background-color: red; */
+  margin-top: 10px;
+  width: 90%;
+  height: 110px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.p1 {
+  /* background-color: red; */
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.capacity,
+.price,
+.brand1,
+.weight {
+  /* background-color: rgb(41, 150, 212); */
+  margin-left: 15px;
+  margin-top: 10px;
+  display: flex;
+}
+.capacitydiv,
+.branddiv1,
+.weight1,
+.price1 {
+  /* background-color: rgb(197, 52, 16); */
+  width: 40%;
+  height: 20px;
+  justify-content: space-between;
+}
+.sizediv,
+.branddiv2,
+.weight2,
+.price2 {
+  /* background-color: rgb(197, 52, 16); */
+  width: 30%;
+  height: 20px;
+  margin-left: 110px;
 }
