@@ -26,7 +26,7 @@ userdata.push(usercred);
 localStorage.setItem("signupdata",JSON.stringify(userdata));
 
 if(name!=""&&email!=""&&password!=""&&cfmpassword!=""){
-window.location.href="landinghomepage.html"
+window.location.href="ubuysigninnew.html"
 } 
 
 }

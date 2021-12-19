@@ -22,11 +22,11 @@ var password=document.querySelector("#ubuypassword").value;
         
   if(res[i].email==email&&res[i].password==password){
             count++;
-            window.location.href="landinghomepage.html"
+            window.location.href="landinghomepage.html";
         }   
     }
     if(count==0){
-        alert("you entered wrong credentials")
+        alert("you entered wrong credentials");
     
 }
   }
