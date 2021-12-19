@@ -77,7 +77,7 @@
 .pay {
   width: 84%;
   height: 47%;
-  border: 1px solid rgb(0, 0, 0);
+  border: 5px solid rgb(0, 0, 0);
   border-radius: 7px;
   margin-top: 15px;
 }
@@ -108,7 +108,7 @@
 .proceedpay {
   height: 16%;
   width: 100%;
-  /* border: 0.3px solid black; */
+  /* border: 2px solid black; */
 }
 
 .des {
@@ -153,11 +153,17 @@ form > select {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+.savebuttondiv{
+  height: 30px;
+  width: 20%;
+  /* border: 2px solid green; */
+}
 
 .savebutton {
   background-color: orange;
-  border-radius: 10px;
-  padding: 10px 50px;
+  border-radius: 5px;
+  height: 30px;
+  width: 100%;
   border: none;
   color: white;
   font-weight: bold;
@@ -169,7 +175,8 @@ form > select {
 .paybutton {
   background-color: orange;
   border-radius: 10px;
-  padding: 10px 30px;
+ height: 40px;
+ width: 40%;
   border: none;
   color: white;
   font-weight: bold;
