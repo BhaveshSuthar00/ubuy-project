@@ -1,15 +1,12 @@
 # ubuy-project
 Project: make a clone of https://www.ubuy.co.in/ site
 
-*This is an E-Commerce website which speciaizes in selling Gift all over the globe. The website provides Gifts for Multiple occasions.*
+*This is an E-Commerce website which speciaizes in selling All kinds of projects like Electronics, Home goods, books, etc. *
 
 ## Technology Stack Used
-- Node.js
 - JavaScript
 - CSS
-- EJS
-- MongoDB
-- Express
+- HTML
 
 #ScreenShots
 - Home page
@@ -18,15 +15,10 @@ Project: make a clone of https://www.ubuy.co.in/ site
 - Signin page
 ![image](https://user-images.githubusercontent.com/95856642/158948429-b3d65129-1dba-4fad-8d8c-32b7bbab1d7e.png)
 
-
-- Signup page
-  
 - Product page
  ![image](https://user-images.githubusercontent.com/95856642/158948337-7c10c9f7-97df-4df7-a57d-3d9e8bfd93d7.png)
  
- <p>
 - Single product page
-</p>
 ![image](https://user-images.githubusercontent.com/95856642/158948555-19af9c98-187b-4ae9-9833-088f37cb5e39.png)
 
 - Cart page
@@ -36,7 +28,7 @@ Project: make a clone of https://www.ubuy.co.in/ site
 ![image](https://user-images.githubusercontent.com/95856642/158948688-8d092fb9-8c45-477c-8c05-05b0ac32897c.png)
   
   ### End Notes 📑
-In this project we were tried to achieve a near to perfect clone of the original website as much as possible. This entire journey of has given us experiences and we have learned lots of things by applying to the real website and it gave us a lot of confidence. If we have more time we can able to add more products.
+In this project we were tried to achieve a near to perfect clone of the original website as much as possible. This entire journey of has given us experiences and we have learned lots of things by applying to the real website and it gave us a lot of confidence, Because this was over first project where we only learn HTML, CSS and basic JavaScript. If we have more time we can able to add more products.
 
 ### Limitations:
 All pages are not responsive yet , those pages are might not be properly visible on small screen devices.
@@ -44,17 +36,15 @@ All pages are not responsive yet , those pages are might not be properly visible
   
   ## Team Members and Contributors 😇 :
 
-- 👤 Shiva karthik
-  Github: https://github.com/Shiva-Karthik
+- 👤 prachi Singh Sherawat
+  Github: https://github.com/prachisinghsherawat
   
-- 👤 Yash
-  Github: https://github.com/yashrajillusion
+- 👤 SureshYarram
+  Github: https://github.com/SureshYarram
   
-- 👤 Sumit
-  Github: https://github.com/sumit6159
+- 👤 Santosh
+  Github: https://github.com/Santosh844
   
-- 👤 Ankit Singh
-  Github: https://github.com/AnkitSingh60
+- 👤 Ankit 
+  Github: https://github.com/thakurankit6767 
   
-- 👤 Mayur Shelar
-  Github: https://github.com/MS1098
